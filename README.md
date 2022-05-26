@@ -4,7 +4,7 @@ Run length encoding is an algorithm for performing lossless data compression. Lo
 
 For example if the sequence is : AACCCBBBBBAAAAFFFFFFFFZ
 
-Then, using run length encoding, we can represent it as: A2C3B5A4F8Z
+Then, using run length encoding, we can represent it as: 2A3C5B4A8FZ
 
 The 23 length sequence was compressed to a 11 length sequence.
 
