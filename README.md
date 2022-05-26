@@ -8,4 +8,6 @@ Then, using run length encoding, we can represent it as: A2C3B5A4F8Z
 
 The 23 length sequence was compressed to a 11 length sequence.
 
-The functions `encode` and `decode` in `main.py` use regex to parse the string in to the appropriate groups of characters and then output the respected encoded and decoded strings.
+The functions `encode` and `decode` in `main.py` use regex to parse the input strings in to the appropriate groups of characters and then output the respected encoded and decoded strings.
+
+To run the tests install pytest `pip install pytest` and run `pytest test.py`
