@@ -1,5 +1,6 @@
 import re
 
+
 def encode(input: str) -> str:
     # regex to group sequencial matching characters using back reference
     regex = r"((.)(\2*))"
@@ -7,7 +8,7 @@ def encode(input: str) -> str:
     # iterate the groups and build the output string
     for g in re.finditer(regex, input):
         group: str = g.group()
-        number: str  = str(len(group)) if len(group) > 1 else ""
+        number: str = str(len(group)) if len(group) > 1 else ""
         output += number + group[-1]
     return output
 
